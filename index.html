@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Скупка антиквариата в Москве: оценка и выкуп (демо-сайт)</title>
+  <meta name="description" content="Демонстрационный сайт скупки антиквариата: бесплатная оценка по фото, выезд эксперта, быстрый выкуп.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__in">
+      <a class="logo" href="#top"><span class="logo__mark">А</span> Старина</a>
+      <input type="checkbox" id="burger" class="burger__cb" aria-label="Меню">
+      <label for="burger" class="burger" aria-hidden="true"><span></span><span></span><span></span></label>
+      <nav class="nav">
+        <a href="#buy">Что мы покупаем?</a>
+        <a href="#experts">Кто оценивает вещи?</a>
+        <a href="#useful">Полезное</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="topbar__phone" data-site="phone" href="tel:">...</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__in">
+        <div class="hero__text">
+          <p class="eyebrow">Бесплатная оценка за 15 минут</p>
+          <h1>Оценим и выкупим антиквариат быстро и честно</h1>
+          <p class="lead">Иконы, картины, фарфор, серебро, монеты и многое другое. Пришлите фото, и эксперт назовёт цену. Деньги в день сделки.</p>
+          <div class="hero__btns">
+            <a class="btn btn--primary" href="#form">Оценить по фото</a>
+            <a class="btn btn--ghost" data-site="phone" href="tel:">...</a>
+          </div>
+          <ul class="facts">
+            <li><b>15 мин</b><span>предварительная оценка</span></li>
+            <li><b>0 ₽</b><span>выезд и консультация</span></li>
+            <li><b>В день</b><span>сделки выплата</span></li>
+          </ul>
+        </div>
+        <form class="card form" id="form">
+          <h2>Узнать стоимость</h2>
+          <label>Ваше имя<input type="text" name="name" placeholder="Как к вам обращаться" required></label>
+          <label>Телефон<input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required></label>
+          <label>Что хотите продать?
+            <select name="kind">
+              <option>Икона</option><option>Картина</option><option>Фарфор или статуэтка</option>
+              <option>Серебро</option><option>Монеты и награды</option><option>Другое</option>
+            </select>
+          </label>
+          <button class="btn btn--primary btn--wide" type="submit">Отправить заявку</button>
+          <p class="form__note" id="formNote">Нажимая кнопку, вы соглашаетесь на обработку данных.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="buy">
+      <div class="container">
+        <h2 class="section__title">Что мы покупаем?</h2>
+        <p class="section__sub">Работаем с предметами от XVIII века до советской эпохи. Не нашли свою категорию, напишите нам.</p>
+        <div class="grid grid--4">
+          <a class="card tile" href="#form"><svg viewBox="0 0 48 48"><rect x="8" y="6" width="32" height="36" rx="6"/><rect x="14" y="12" width="20" height="24" rx="3"/></svg><h3>Иконы</h3><p>Церковная утварь, оклады, складни</p></a>
+          <a class="card tile" href="#form"><svg viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="28" rx="5"/><circle cx="18" cy="21" r="4"/><path d="M10 34l10-9 7 6 5-4 6 7"/></svg><h3>Картины</h3><p>Живопись, графика, акварель</p></a>
+          <a class="card tile" href="#form"><svg viewBox="0 0 48 48"><path d="M18 6h12M20 6c0 8-8 10-8 20 0 8 5 14 12 14s12-6 12-14c0-10-8-12-8-20"/></svg><h3>Фарфор</h3><p>Статуэтки, сервизы, вазы</p></a>
+          <a class="card tile" href="#form"><svg viewBox="0 0 48 48"><ellipse cx="24" cy="14" rx="8" ry="9"/><path d="M24 23v19"/></svg><h3>Серебро</h3><p>Столовые приборы, подстаканники</p></a>
+          <a class="card tile" href="#form"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="10"/></svg><h3>Монеты и награды</h3><p>Ордена, медали, значки</p></a>
+          <a class="card tile" href="#form"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><path d="M24 14v10l7 5"/></svg><h3>Часы и бронза</h3><p>Каминные, настольные, каслинское литьё</p></a>
+          <a class="card tile" href="#form"><svg viewBox="0 0 48 48"><path d="M12 8h24v14H12zM10 22h28v8H10zM14 30v10M34 30v10"/></svg><h3>Мебель</h3><p>Стулья, комоды, шкатулки</p></a>
+          <a class="card tile" href="#form"><svg viewBox="0 0 48 48"><path d="M8 10h14c2 0 2 2 2 2v28s0-2-2-2H8zM40 10H26c-2 0-2 2-2 2v28s0-2 2-2h14z"/></svg><h3>Книги</h3><p>Старые издания, открытки, карты</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+        <h2 class="section__title">Как проходит выкуп</h2>
+        <div class="grid grid--4">
+          <div class="card step"><span class="step__n">1</span><h3>Фото или звонок</h3><p>Пришлите снимки предмета или позвоните.</p></div>
+          <div class="card step"><span class="step__n">2</span><h3>Оценка эксперта</h3><p>Предварительная цена в течение 15 минут.</p></div>
+          <div class="card step"><span class="step__n">3</span><h3>Осмотр</h3><p>Приедем к вам или встретимся в офисе.</p></div>
+          <div class="card step"><span class="step__n">4</span><h3>Деньги сразу</h3><p>Наличными или переводом в день сделки.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experts">
+      <div class="container">
+        <h2 class="section__title">Кто оценивает вещи?</h2>
+        <p class="section__sub">Оценивают профильные специалисты. Имена и фото условные, в рабочей версии здесь ваша команда.</p>
+        <div class="grid grid--3">
+          <div class="card expert"><span class="avatar">И</span><h3>Эксперт по иконам</h3><p>Опыт работы 15 лет. Определяет век, школу письма, сохранность.</p></div>
+          <div class="card expert"><span class="avatar">К</span><h3>Эксперт по живописи</h3><p>Атрибуция, подписи, материалы, рамы и реставрация.</p></div>
+          <div class="card expert"><span class="avatar">М</span><h3>Эксперт по металлам</h3><p>Серебро, бронза, пробы и клейма, монеты и награды.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="useful">
+      <div class="container">
+        <h2 class="section__title">Полезное</h2>
+        <div class="grid grid--3">
+          <a class="card article" href="#useful"><h3>Как подготовить предмет к оценке</h3><p>Что сфотографировать и что не стоит чистить самостоятельно.</p><span>Читать →</span></a>
+          <a class="card article" href="#useful"><h3>Как отличить подлинник от копии</h3><p>Основные признаки возраста и подлинности.</p><span>Читать →</span></a>
+          <a class="card article" href="#useful"><h3>Какие документы пригодятся</h3><p>Чеки, паспорта, архивные записи и провенанс.</p><span>Читать →</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <h2 class="section__title">Отзывы</h2>
+        <div class="grid grid--3">
+          <div class="card review"><p>«Демонстрационный отзыв: быстро оценили и приехали в тот же день.»</p><b>Клиент 1</b></div>
+          <div class="card review"><p>«Демонстрационный отзыв: объяснили, из чего сложилась цена.»</p><b>Клиент 2</b></div>
+          <div class="card review"><p>«Демонстрационный отзыв: деньги получил сразу после осмотра.»</p><b>Клиент 3</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="contacts">
+      <div class="container contacts">
+        <div>
+          <h2 class="section__title">Контакты</h2>
+          <ul class="contact-list">
+            <li><span>Адрес</span><b data-site="address">...</b></li>
+            <li><span>Телефон</span><a data-site="phone" href="tel:">...</a></li>
+            <li><span>График</span><b data-site="hours">...</b></li>
+          </ul>
+        </div>
+        <div class="card map" aria-hidden="true"><span>Здесь будет карта</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">Демо-версия для портфолио. Тексты, контакты и отзывы условные. Контакты меняются в одном месте: файл <code>config.js</code>.</div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
